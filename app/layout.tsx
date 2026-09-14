@@ -31,6 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/" className="text-zinc-900 font-medium">Acasă</Link>
             <Link href="/products" className="text-zinc-900 font-medium">Produse</Link>
             <Link href="/cart" className="text-zinc-900 font-medium">Coș</Link>
+            <Link href="/checkout" className="text-zinc-900 font-medium">Checkout</Link>
           </nav>
           {children}
         </CartProvider>

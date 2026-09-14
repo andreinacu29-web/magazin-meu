@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { useCart } from "../context/CartContext";
 
 export default function CartPage() {
@@ -28,7 +30,7 @@ export default function CartPage() {
               </div>
             ))}
           </div>
-          <div className="flex justify-between items-center mt-6 px-2">
+                    <div className="flex justify-between items-center mt-6 px-2">
             <span className="text-lg font-semibold text-zinc-900">
               Total
             </span>
@@ -36,6 +38,12 @@ export default function CartPage() {
               {total} lei
             </span>
           </div>
+          <Link
+            href="/checkout"
+            className="mt-6 block text-center rounded-full bg-black text-white px-4 py-3 font-medium hover:bg-zinc-800 transition-colors"
+          >
+            Finalizează comanda
+          </Link>
         </div>
       )}
     </div>
